@@ -11,3 +11,5 @@ const ToDoSchema = mongoose.Schema({
         require: true
     }
 });
+
+const ToDoList = module.exports = mongoose.model('ToDoList', ToDoSchema);
