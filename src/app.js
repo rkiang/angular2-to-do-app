@@ -5,6 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./config/database');
 const todoList = require('./controllers/to-do-list');
+const toDoSchema = require('./models/schema');
 
 const app = express();
 
