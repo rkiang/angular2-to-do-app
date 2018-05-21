@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./config/database');
-const todoList = require('./controllers/to-do-list');
+const todoList = require('./controllers/todolist');
 const toDoSchema = require('./models/schema');
 
 const app = express();

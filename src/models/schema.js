@@ -13,3 +13,12 @@ const ToDoSchema = mongoose.Schema({
 });
 
 const ToDoList = module.exports = mongoose.model('ToDoList', ToDoSchema);
+
+module.exports.getAllLists = (callback) => {
+	ToDoList.find(callback);
+}
+
+module.exports.deleteListById = (id, callback) => {
+    let query = {_id: id};
+    ToDoList.remove(query, callback);
+}
